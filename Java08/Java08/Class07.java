@@ -1,3 +1,4 @@
+package Java08;
 class CTest{
     void test(int n){
         System.out.printf("n=%d", n);

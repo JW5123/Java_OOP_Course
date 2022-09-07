@@ -1,3 +1,4 @@
+package Java08;
 class CSphere{
     private int x;
     private int y;

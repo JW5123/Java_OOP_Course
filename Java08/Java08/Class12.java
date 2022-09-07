@@ -1,3 +1,4 @@
+package Java08;
 class CWin{
     int width;
     int height;

@@ -1,3 +1,4 @@
+package Java08;
 import java.text.DecimalFormat;
 class Cbbb{
     double x;
