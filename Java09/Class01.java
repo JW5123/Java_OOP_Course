@@ -18,9 +18,16 @@ class CRectangle{
     }
     problem c
     */
+    void show(){
+        System.out.println("width= " + width);
+        System.out.println("height= " + height);
+    }
 }
 public class Class01 {
     public static void main(String[] args) {
-        
+        CRectangle rec1 = new CRectangle(2, 3);
+        rec1.show();
+        CRectangle res2 = new CRectangle();
+        res2.show();
     }
 }
