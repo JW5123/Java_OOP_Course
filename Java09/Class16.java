@@ -8,7 +8,7 @@ class CCircle1{
     }
 
     public void show(){
-        System.out.println("area=" + pi * radius * radius);
+        System.out.printf("Radius= %.1f, area= %.2f\n", radius, pi * radius * radius);
     }
 }
 public class Class16 {
@@ -16,9 +16,7 @@ public class Class16 {
         CCircle1 cir[] = new CCircle1[5];
         for(int i = 0; i < cir.length; i++){
             cir[i] = new CCircle1(i);
-        }
-        
-        for(int i =0 ; i < cir.length; i++){
+            System.out.printf("c[%d]: ", i);
             cir[i].show();
         }
     }
