@@ -3,6 +3,7 @@ class CRational{
     public int n;
     public int d;
 
+    // (a)
     public void setN(int num){
         n = num;
     }
@@ -26,6 +27,7 @@ public class Class10 {
         bbb.setND(2, 3);
         show(bbb);
     }
+    // (b)
     public static void show(CRational obj){
         System.out.printf("%d / %d\n", obj.n, obj.d);
     }
