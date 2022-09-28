@@ -16,12 +16,11 @@ class CCircle{
         return max;
     }
     public static double average(CCircle c[]){
-        double avg = 0, sum = 0;
+        int sum = 0;
         for(int i = 0; i < c.length; i++){
             sum += c[i].radius;
-            avg = sum / c.length;
         }
-        return avg;
+        return sum * 1.0 / c.length;
     }
 }
 public class Class15 {
