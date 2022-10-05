@@ -1,17 +1,19 @@
 package Java111Q1;
-class Cal_area{
+class Area{
     public double pi = 3.14159;
-    public double Ball_area(double r){
-        return (4 * pi * Math.pow(r, 3)) / 3;
+    void Cal_area(int r){
+        System.out.printf("半徑 = %d\n", r);
+        System.out.printf("球形體積 = %.1f\n", (4 * pi * Math.pow(r, 3)) / 3);
     }
-    public int Cube_area(int a, int b, int c){
-        return  ((a * b) + (b * c) + (c * a)) * 2;
+    void Cal_area(int a, int b, int c){
+        System.out.printf("長 = %d 寬 = %d 高 = %d\n", a ,b, c);
+        System.out.printf("球形體積 = %d\n", ((a * b) + (b * c) + (c * a)) * 2);
     }
 }
 public class Class01 {
     public static void main(String[] args) {
-        Cal_area ca = new Cal_area();
-        System.out.printf("Ball_area = %lf\n", ca.Ball_area(10));
-        System.out.printf("Cube_area = %d\n", ca.Cube_area(4, 5, 6));
+        Area ca = new Area();
+        ca.Cal_area(10);
+        ca.Cal_area(4, 5, 6);
     }
 }
