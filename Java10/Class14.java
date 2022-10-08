@@ -12,7 +12,7 @@ class Caaa{
 }
 class Cbbb extends Caaa{
     public Cbbb(int a, int b){
-        super(a, b);    //Calling constructor with parameters from the parent class
+        super(a, b);    //Calling constructor parameters from the parent class
     }
     public void show(){
         System.out.printf("num1 = %d, num2 = %d\n", num1, num2);
