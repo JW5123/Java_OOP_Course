@@ -1,7 +1,7 @@
 package Java11;
 abstract class CShape{
     protected String color;
-    public CShape(String str){
+    public CShape(String str){ //建構元
         color = str;
     }
     public abstract void show();
