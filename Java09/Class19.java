@@ -31,7 +31,7 @@ class Data{
 }
 public class Class19{
     public static void main(String[] args) {
-        Data stu=new Data("Annie",85,92);
+        Data stu = new Data("Annie",85,92);
         stu.show();
     }
 }

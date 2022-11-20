@@ -9,7 +9,7 @@ class CWin{
         cnt++;
     }
 
-    CWin(String str, int w, int h){
+    CWin(String str, int w, int h){ //建構元
         color = str;
         width = w;
         height = h;

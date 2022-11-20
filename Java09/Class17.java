@@ -8,7 +8,7 @@ class Namecard{
         String company;
         String cell;
         
-        Phone(String s1, String s2){
+        Phone(String s1, String s2){ //建構元
             company = s1;
             cell = s2;
         }
