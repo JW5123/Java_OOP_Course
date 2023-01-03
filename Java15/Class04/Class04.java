@@ -1,4 +1,4 @@
-package Java15.Class03;
+package Java15.Class04;
 
 class CTest extends Thread {
     private String id;
@@ -8,17 +8,21 @@ class CTest extends Thread {
     }
     public void run() {
         for (int i = 1; i <= 5; i++) {
-            for (int j = 0; j < 100000000; j++);
+            for (int j = 0; j < 100000000; j++)
+                ;
             System.out.println(id + " " + i);
         }
     }
 }
 
-public class Class03 {
+public class Class04 {
     public static void main(String[] args) {
         CTest hi = new CTest("Hello");
         CTest bye = new CTest("Good Bye");
+        CTest morning = new CTest("Good morning");
         hi.start();
         bye.start();
+        morning.start();
     }
+
 }

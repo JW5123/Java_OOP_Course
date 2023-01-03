@@ -1,28 +1,30 @@
 package Java15.Class09;
 
-class QNine implements Runnable{
-	String s = "";
-	float sec = 0;
-	public QNine(String in,float se) {
-		s = in;
-		sec = se;
+class CTest extends Thread implements Runnable{
+	private String id;
+	private int sec;
+	
+	public CTest(String str, int s) {
+		id = str;
+		sec = s;
 	}
 	public void run() {
 		for(int i = 0;i < 10;i++) {
 			try {
-				Thread.sleep((long)sec*1000);
+				sleep(sec);
+				System.out.println("Thread "+ id +" is running");
 			}
-			catch(InterruptedException e) {}
-			System.out.println("Thread "+s+" is running");
+			catch(InterruptedException e) {
+			}
 		}
 	}
 }
 public class Class09 {
 	public static void main(String[] args) {
-		QNine q1 = new QNine("1",(float)2.5);
-		QNine q2 = new QNine("2",1);
-		Thread t1 = new Thread(q1);
-		Thread t2 = new Thread(q2);
+		CTest r1 = new CTest("1", 1000);
+		CTest r2 = new CTest("2",2500);
+		Thread t1 = new Thread(r1);
+		Thread t2 = new Thread(r2);
 		t1.start();
 		t2.start();
 	}

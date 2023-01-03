@@ -9,14 +9,17 @@ class Add implements Runnable {
     }
     public void run() {
         sum = (1 + n) * n / 2;
-        System.out.println(sum);
+        System.out.println("1+2+...+" + n + " = " + sum);
     }
 }
 public class Class06 {
     public static void main(String[] args) {
-        Add add = new Add(5);
-        Thread a1 = new Thread(add);
-        a1.start();
+        Add a1 = new Add(5);
+        Add a2 = new Add(10);
+        Thread t1 = new Thread(a1);
+        Thread t2 = new Thread(a2);
+        t1.start();
+        t2.start();
     }
 
 }
